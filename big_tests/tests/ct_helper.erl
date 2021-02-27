@@ -25,7 +25,7 @@ is_ct_running() ->
 -spec repeat_all_until_all_ok([group_def() | group_def_dirty() | group_def_incomplete()]) ->
     [group_def()].
 repeat_all_until_all_ok(GroupDefs) ->
-    repeat_all_until_all_ok(GroupDefs, 3).
+    repeat_all_until_all_ok(GroupDefs, 1).
 
 %% @doc repeat_all_until_all_ok/2 will rewrite your group definitions so that
 %% the `{repeat_until_all_ok, Retries}` property is added to all of them.
